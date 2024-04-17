@@ -15,7 +15,7 @@ jobs:
     - name: Set up SSH key
       uses: webfactory/ssh-agent@v0.5.3
       with:
-        ssh-private-key: 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINKQRWzJ2oS12WGLWF40w4Vg8WOI5eC6XrkCQmsbUwE2 User@WIN-5FKLC587R4P'
+        ssh-private-key: ${{ secrets.ED25519 }}
 
     - name: Deploy and Restart Application
       run: |
